@@ -1,3 +1,4 @@
 import GeneticAlgorithm from './geneticAlgorithm';
+import UserConfig from './userConfig';
 
-export default (): GeneticAlgorithm => new GeneticAlgorithm();
+export default (config: UserConfig): GeneticAlgorithm => new GeneticAlgorithm(config);

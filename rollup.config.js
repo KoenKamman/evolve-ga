@@ -21,16 +21,16 @@ export default [
         ],
         output: [{
             file: pkg.main,
-            format: 'cjs'
+            format: 'cjs',
         }, {
             file: pkg.module,
-            format: 'es'
+            format: 'es',
         }, {
             file: pkg.browser,
             format: 'iife',
             name,
-            globals: {}
-        }]
+            globals: {},
+        }],
     },
     {
         input: './src/index.ts',
@@ -39,13 +39,13 @@ export default [
             resolve({ extensions }),
             commonjs(),
             babel({ extensions, include: ['src/**/*'], exclude: ['src/**/*.spec.ts'] }),
-            terser()
+            terser(),
         ],
         output: [{
-            file: "dist/evolve-ga.iife.min.js",
+            file: 'dist/evolve-ga.iife.min.js',
             format: 'iife',
             name,
-            globals: {}
-        }]
-    }
+            globals: {},
+        }],
+    },
 ];
