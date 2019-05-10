@@ -1,6 +1,4 @@
-import { Gene } from './typeAliases';
-
-export default interface Chromosome {
+export interface Chromosome {
     fitness: number;
-    genes: Gene[];
+    genes: (number | string)[];
 }
