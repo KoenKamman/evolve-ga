@@ -1,4 +1,4 @@
-import Chromosome from '../chromosome';
+import { Chromosome } from '../chromosome';
 
 export const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
     let offspring: Chromosome[] = [];

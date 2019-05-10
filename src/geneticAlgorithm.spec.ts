@@ -1,8 +1,8 @@
-import GeneticAlgorithm from './geneticAlgorithm';
 import { fitnessFunction } from './defaultFunctions/fitnessFunction';
 import { mutationFunction } from './defaultFunctions/mutationFunction';
 import { selectionFunction } from './defaultFunctions/selectionFunction';
 import { crossOverFunction } from './defaultFunctions/crossOverFunction';
+import { GeneticAlgorithm } from './geneticAlgorithm';
 
 describe('GeneticAlgorithm should', (): void => {
     const CHROMOSOME_LENGTH = 10;

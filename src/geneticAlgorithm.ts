@@ -1,9 +1,9 @@
-import Chromosome from './chromosome';
-import UserConfig from './config/userConfig';
 import { defaultConfig } from './config/defaultConfig';
-import Config from './config/config';
+import { Config } from './config/config';
+import { Chromosome } from './chromosome';
+import { UserConfig } from './config/userConfig';
 
-export default class GeneticAlgorithm {
+export class GeneticAlgorithm {
     private config: Config;
     private population: Chromosome[];
 

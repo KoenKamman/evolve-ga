@@ -1,5 +1,5 @@
 import { crossOverFunction } from './crossOverFunction';
-import Chromosome from '../chromosome';
+import { Chromosome } from '../chromosome';
 
 describe('CrossOver should return a new array equal in length', (): void => {
     test('length 0', (): void => {

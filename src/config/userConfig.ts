@@ -1,6 +1,6 @@
-import Chromosome from '../chromosome';
+import { Chromosome } from '../chromosome';
 
-export default interface UserConfig {
+export interface UserConfig {
     fitnessFunction: (chromosome: Chromosome) => number;
     selectionFunction?: (chromosomes: Chromosome[]) => Chromosome[];
     crossOverFunction?: (chromosomes: Chromosome[]) => Chromosome[];

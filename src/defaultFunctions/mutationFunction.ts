@@ -1,4 +1,4 @@
-import Chromosome from '../chromosome';
+import { Chromosome } from '../chromosome';
 
 export const mutationFunction = (chromosome: Chromosome, possibleGenes: (number | string)[]): Chromosome => {
     let mutatedGenes = [...chromosome.genes];

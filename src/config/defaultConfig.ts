@@ -1,8 +1,8 @@
-import Config from './config';
 import { mutationFunction } from '../defaultFunctions/mutationFunction';
 import { crossOverFunction } from '../defaultFunctions/crossOverFunction';
 import { selectionFunction } from '../defaultFunctions/selectionFunction';
 import { fitnessFunction } from '../defaultFunctions/fitnessFunction';
+import { Config } from './config';
 
 export const defaultConfig: Config = {
     fitnessFunction: fitnessFunction,

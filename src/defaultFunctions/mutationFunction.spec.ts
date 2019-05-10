@@ -1,5 +1,5 @@
 import { mutationFunction } from './mutationFunction';
-import Chromosome from '../chromosome';
+import { Chromosome } from '../chromosome';
 
 describe('Mutate should return a new chromosome', (): void => {
     const possibleGenes = [0, 1, 2];

@@ -1,5 +1,5 @@
-import Chromosome from '../chromosome';
 import { selectionFunction } from './selectionFunction';
+import { Chromosome } from '../chromosome';
 
 describe('Selection should return a new array', (): void => {
     test('sorted by fitness', (): void => {

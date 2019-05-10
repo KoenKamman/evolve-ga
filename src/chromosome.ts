@@ -1,4 +1,4 @@
-export default interface Chromosome {
+export interface Chromosome {
     fitness: number;
     genes: (number | string)[];
 }
