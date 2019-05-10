@@ -1,6 +1,6 @@
 {
   "name": "evolve-ga",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Genetic Algorithm",
   "main": "dist/evolve-ga.cjs.js",
   "module": "dist/evolve-ga.esm.js",
