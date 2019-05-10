@@ -1,6 +1,6 @@
 import GeneticAlgorithm from './geneticAlgorithm';
 import index from './index';
-import UserConfig from './userConfig';
+import UserConfig from './config/userConfig';
 
 test('Export function which returns a GeneticAlgorithm instance', (): void => {
     const config: UserConfig = {
