@@ -68,18 +68,11 @@ Signature:
 ```
 The default Selection Function is as follows:
 ```typescript
-const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
-    let offspring: Chromosome[] = [];
-    for (let i = 0; i < chromosomes.length; i++) {
-        const crossOverPoint = Math.floor(Math.random() * chromosomes[i].genes.length);
-        const parentA = chromosomes[Math.floor(Math.random() * chromosomes.length)];
-        const parentB = chromosomes[Math.floor(Math.random() * chromosomes.length)];
-        offspring[i] = {
-            fitness: 0,
-            genes: [...parentA.genes.slice(0, crossOverPoint), ...parentB.genes.slice(crossOverPoint)]
-        }
+const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
+    return chromosomes
+        .sort((a: Chromosome, b: Chromosome): number => b.fitness - a.fitness)
+        .slice(0, Math.ceil(chromosomes.length / 2));
     }
-    return offspring;
 }
 ```
 
