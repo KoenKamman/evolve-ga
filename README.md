@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/KoenKamman/evolve-ga.svg?branch=master)](https://travis-ci.org/KoenKamman/evolve-ga)
-[![Coverage Status](https://coveralls.io/repos/github/KoenKamman/evolve-ga/badge.svg?branch=master)](https://coveralls.io/github/KoenKamman/evolve-ga?branch=master)
-![npm](https://img.shields.io/npm/v/evolve-ga.svg)
+[![Travis (.com)](https://img.shields.io/travis/com/KoenKamman/evolve-ga.svg)](https://travis-ci.org/KoenKamman/evolve-ga)
+[![Coveralls github](https://img.shields.io/coveralls/github/KoenKamman/evolve-ga.svg)](https://coveralls.io/github/KoenKamman/evolve-ga)
+[![npm](https://img.shields.io/npm/v/evolve-ga.svg)](https://www.npmjs.com/package/evolve-ga)
 
 # Evolve - Genetic Algorithm
 Simple implementation of a Genetic Algorithm.
