@@ -3,18 +3,18 @@ import { Chromosome } from '../chromosome';
 
 describe('Selection should return a new array', (): void => {
     test('sorted by fitness', (): void => {
-        const ARRAY_LENGTH = 10;
+        const ARRAY_LENGTH = 100;
         const inputArray: Chromosome[] = [];
-        for (let i = 0; i < ARRAY_LENGTH; i++) {
+        for (let i = -50; i < ARRAY_LENGTH - 50; i++) {
             inputArray.push({
-                fitness: Math.random(),
+                fitness: i,
                 genes: [0, 1, 2, 3, 4, 5]
             });
         }
         const selectedChromosomes = selectionFunction(inputArray);
         let isSorted = true;
         for (let i = 0; i < selectedChromosomes.length - 1 && isSorted; i++) {
-            isSorted = selectedChromosomes[i].fitness > selectedChromosomes[i + 1].fitness;
+            isSorted = selectedChromosomes[i].fitness >= selectedChromosomes[i + 1].fitness;
         }
         expect(isSorted).toBe(true);
     });
